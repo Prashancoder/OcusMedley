@@ -47,7 +47,7 @@ const Index = () => {
 
       {/* <Associations /> */}
             <WhyChoose />   {/* ✅ Yeh ab alag component aa gaya */}
-            <Services />
+            {/* <Services /> */}
 
 
       <LeadForm />

@@ -27,52 +27,60 @@ const WhyChoose = () => {
           {/* Bullet Points */}
           <div className="space-y-4 mb-12">
             <p className="font-semibold text-lg text-gray-800">
-              ✓ Premium Independent Floor Living
+              ✓ Prime Location on Dwarka Expressway
             </p>
             <p className="font-semibold text-lg text-gray-800">
-              ✓ Located in Fully Developed Sector 51
+              ✓ Surrounded by 50+ Residential Projects
             </p>
             <p className="font-semibold text-lg text-gray-800">
-              ✓ Excellent Rental & Appreciation Potential
+              ✓ Catchment of 1,00,000+ Affluent Families
             </p>
             <p className="font-semibold text-lg text-gray-800">
-              ✓ Ideal for End-Users & Investors
+              ✓ High Footfall Retail & Entertainment Hub
             </p>
             <p className="font-semibold text-lg text-gray-800">
-              ✓ Limited Inventory Available
+              ✓ Multiplex, Restaurants & Family Entertainment
+            </p>
+            <p className="font-semibold text-lg text-gray-800">
+              ✓ Grade A Office Spaces for Businesses
+            </p>
+            <p className="font-semibold text-lg text-gray-800">
+              ✓ Excellent Rental & Capital Appreciation Potential
             </p>
           </div>
 
-          {/* Prime Location Section */}
+          {/* Location Advantage Section */}
           <div className="border-t pt-10">
             <h4 className="text-2xl font-bold text-gray-900 mb-6">
-              Prime Location Advantage
+              Strategic Location Advantage
             </h4>
 
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Strategically located for effortless connectivity:
+              OCUS MEDLEY enjoys a strategic position on Dwarka Expressway,
+              one of NCR’s fastest growing commercial corridors.
             </p>
 
             <ul className="space-y-3 text-gray-700 font-medium mb-8">
-              <li>🏥 Just 3 km from Medanta</li>
-              <li>🏫 Only 500 m from Amity International School</li>
-              <li>💼 3 km from Unitech Cyber Park</li>
-              <li>🚇 3 km from Upcoming Metro Station – Sector 40</li>
+              <li>🚗 Located on 29 KM Signal-Free Dwarka Expressway</li>
+              <li>🏙 Surrounded by 50+ Premium Residential Projects</li>
+              <li>👨‍👩‍👧‍👦 Catchment of 1 Lakh+ High-Income Families</li>
+              <li>✈️ Excellent connectivity to IGI Airport & Delhi</li>
             </ul>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Live close to top healthcare, reputed schools, business hubs,
-              and future infrastructure growth.
+              The project is positioned to attract strong retail demand,
+              entertainment footfall and office occupancy from the rapidly
+              developing Dwarka Expressway micro-market.
             </p>
 
             <p className="text-gray-700 font-semibold leading-relaxed">
-              Sector 51 is a fully developed micro-market with strong capital
-              appreciation trends, making OCUS MEDLEY a compelling lifestyle
-              and investment asset for buyers.
+              With growing residential density and infrastructure development,
+              OCUS MEDLEY offers an exceptional opportunity for retail brands,
+              businesses and investors seeking long-term value.
             </p>
 
             <p className="mt-4 text-yellow-600 font-bold">
-              Limited inventory. Select ownership.
+              Limited commercial investment opportunities available.
             </p>
           </div>
 
