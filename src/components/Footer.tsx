@@ -1,0 +1,69 @@
+import { Phone, Mail } from 'lucide-react';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-black text-white font-sans">
+      <div className="container mx-auto px-6 py-12">
+
+        {/* Main Footer Content */}
+        <div className="text-center max-w-3xl mx-auto space-y-6">
+
+          <h3 className="text-2xl font-bold">
+          Orchid IVY
+          </h3>
+
+
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-300 text-sm">
+
+            <div className="flex items-center gap-2">
+              <Phone size={16} />
+              <span>9971809303</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Mail size={16} />
+              <span>lavneetdabas26@gmail.com</span>
+            </div>
+
+          </div>
+
+          {/* RERA Placeholder */}
+          <div className="text-gray-500 text-xs">
+            RERA No: ________
+          </div>
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-white/20 mt-10 pt-6 text-center text-xs text-gray-400 space-y-3">
+
+          <div>
+            © {currentYear} | Orchid IVY | All Rights Reserved.
+          </div>
+
+          <div className="flex justify-center gap-4">
+            <a href="/privacy-policy" className="hover:text-gray-200">
+              Privacy Policy
+            </a>
+            <span className="opacity-40">|</span>
+            <a href="/terms-conditions" className="hover:text-gray-200">
+              Terms & Conditions
+            </a>
+          </div>
+
+          {/* Mandatory Legal Disclaimer */}
+          <div className="max-w-2xl mx-auto text-gray-500 leading-relaxed">
+          This website is an independent property information platform and is not the official website of the developer of Orchid IVY. The content provided is for informational purposes only and does not constitute any legal offer, agreement, or contract. All prices, availability, specifications, floor plans, and project details are subject to change without prior notice. Images, visuals, and representations used on this website are for illustrative purposes only. By submitting your details, you authorize us to contact you via call, SMS, WhatsApp, or email regarding this project, even if your number is registered under DND/NDNC. Your information may be shared with RERA-registered real estate professionals or developers for further assistance. For accurate and updated project information, please contact us directly.
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
