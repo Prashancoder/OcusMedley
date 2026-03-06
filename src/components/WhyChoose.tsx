@@ -17,7 +17,7 @@ const WhyChoose = () => {
         <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Why Choose{" "}
           <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
-            Orchid IVY?
+            OCUS MEDLEY?
           </span>
         </h3>
 
@@ -67,7 +67,7 @@ const WhyChoose = () => {
 
             <p className="text-gray-700 font-semibold leading-relaxed">
               Sector 51 is a fully developed micro-market with strong capital
-              appreciation trends, making Orchid IVY a compelling lifestyle
+              appreciation trends, making OCUS MEDLEY a compelling lifestyle
               and investment asset for buyers.
             </p>
 

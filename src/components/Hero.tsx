@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="block md:hidden absolute inset-0">
           <img
             src={heroBgMobile}
-            alt="Orchid IVY Sector 51 Gurugram"
+            alt="OCUS MEDLEY Sector 99 Dwarka Expressway Gurugram"
             className="w-full h-full object-cover"
           />
         </div>
@@ -32,25 +32,25 @@ const Hero = () => {
             <div>
 
               <div className="inline-block px-4 py-1 mb-4 bg-orange-500 text-white text-sm font-bold rounded-full uppercase tracking-widest">
-                Experience Premium Independent Floors
+                Experience Premium Commercial Investment Opportunity
               </div>
 
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-  Orchid IVY <br />
-  <span className="text-orange-400">
-    Sector 51, Gurugram
-  </span>
-</h1>
+                OCUS MEDLEY <br />
+                <span className="text-orange-400">
+                  Sector 99, Dwarka Expressway, Gurugram
+                </span>
+              </h1>
 
               <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-xl">
-                3 & 4 BHK + Study Independent Floors  
-                with Servant Room, Basement Area & Private Terrace.
+                Premium Retail Shops, Food Court, Multiplex & Office Spaces 
+                in a high-growth commercial hub on Dwarka Expressway.
               </p>
 
               <div className="space-y-2 text-gray-200 text-sm md:text-base mb-6">
-                <p>✓ Located in Fully Developed Sector-51 </p>
-                <p>✓ Excellent Rental & Appreciation Potential</p>
-                <p>✓ Limited Inventory</p>
+                <p>✓ Located on 29 KM Signal-Free Dwarka Expressway</p>
+                <p>✓ Surrounded by 50+ Residential Projects & 1 Lakh+ HNI Families</p>
+                <p>✓ Retail + Entertainment + Office Spaces Under One Roof</p>
               </div>
 
               <div className="flex flex-wrap gap-4 items-center">
@@ -58,7 +58,7 @@ const Hero = () => {
                   href="tel:919971809303"
                   className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold transition-all"
                 >
-                  📞 Call Now –9971809303
+                  📞 Call Now – 9971809303
                 </a>
 
                 <button
@@ -73,7 +73,7 @@ const Hero = () => {
               </div>
 
               <p className="mt-4 text-sm text-gray-200">
-                Starting at <span className="font-bold  text-2xl">₹3.80 Cr Onwards*</span>
+                Starting Investment at <span className="font-bold text-2xl">Attractive Pricing*</span>
               </p>
 
             </div>
@@ -97,7 +97,7 @@ const Hero = () => {
             Book Your Site Visit
           </h2>
           <p className="text-slate-600 mb-6 text-sm">
-            Share your details to receive floor plans, pricing & availability updates.
+            Share your details to receive pricing, availability & investment details.
           </p>
           <LeadForm variant="compact" />
         </div>

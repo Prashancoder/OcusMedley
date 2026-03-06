@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
               </h2>
               <p>
                 This website is an independent property information platform created 
-                for marketing and informational purposes related to Orchid IVY, 
+                for marketing and informational purposes related to OCUS MEDLEY, 
                 Sector 51, Gurugram.
               </p>
               <p className="mt-4">
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
                 6. Project Disclaimer
               </h2>
               <p>
-                This website is not the official website of the developer of Orchid IVY. 
+                This website is not the official website of the developer of OCUS MEDLEY. 
                 All project information including pricing, availability, floor plans, 
                 specifications and offers are subject to change without prior notice. 
                 Images and visuals are for representation purposes only.
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
               </h2>
               <div className="bg-muted p-6 rounded-lg">
                 <p><strong>Project Inquiry Desk</strong></p>
-                <p>Orchid IVY, Sector 51, Gurugram</p>
+                <p>OCUS MEDLEY, Sector 51, Gurugram</p>
                 <p>Phone: 9971809303</p>
                 <p>Email: lavneetdabas26@gmail.com</p>
               </div>

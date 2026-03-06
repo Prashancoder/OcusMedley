@@ -15,7 +15,7 @@ const Projects = () => {
       {/* Section Heading */}
       <div className="text-center mb-16 px-4">
         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
-          Orchid IVY – Premium Independent Floors
+          OCUS MEDLEY – Premium Independent Floors
         </h2>
         <p className="text-gray-600 text-lg md:text-xl">
           3 & 4 BHK + Study | Sector 51, Gurugram
