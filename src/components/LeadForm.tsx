@@ -75,7 +75,7 @@ const LeadForm = ({
       email: formData.email,
       phone: formData.phone,
       message: formData.message,
-      property_project_name: "Orchid IVY - Sector 51 Gurugram",
+      property_project_name: "Ocus Medley",
     };
 
     // Store form data in sessionStorage for background submission
