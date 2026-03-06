@@ -55,8 +55,7 @@ const Index = () => {
       <Footer />
 
       <a
-        href="https://wa.me/919971809303?text=Hi,%20I%20am%20interested%20in%20Orchid%20IVY,%20Sector%2051%20Gurugram.%20Please%20share%20details."
-        target="_blank"
+href="https://wa.me/919971809303?text=Hi,%20I%20am%20interested%20in%20OCUS%20Medley,%20Sector%2099%20Dwarka%20Expressway,%20Gurugram.%20Please%20share%20details."        target="_blank"
         className="fixed w-16 h-16 bottom-16 right-12 bg-green-500 text-white rounded-full flex items-center justify-center cursor-pointer z-50 shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300"
       >
         <img
