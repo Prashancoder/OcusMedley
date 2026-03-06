@@ -72,9 +72,9 @@ const Hero = () => {
                 </button>
               </div>
 
-              <p className="mt-4 text-sm text-gray-200">
+              {/* <p className="mt-4 text-sm text-gray-200">
                 Starting Investment at <span className="font-bold text-2xl">Attractive Pricing*</span>
-              </p>
+              </p> */}
 
             </div>
 
