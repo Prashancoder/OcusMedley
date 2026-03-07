@@ -13,9 +13,10 @@ const Partners: React.FC = () => {
     <section className="py-28 bg-white overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 text-center">
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-20">
-          Our Brand Partners
-        </h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-20">
+  <span style={{ color: "#DB8C23" }}>GALL</span>
+  <span className="text-black">ERY</span>
+</h2>
 
         <div className="slider">
           <div className="slide-track">

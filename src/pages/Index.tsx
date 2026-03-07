@@ -12,6 +12,8 @@ import WhyChoose from '@/components/WhyChoose';
 import CompanySection from '@/components/CompanySection'; // ✅ Import new component
 import Newplot from '@/components/newplot'; // ✅ Import new component
 import Partners from '@/components/Partners';
+import PreLeaseBanner from "@/components/PreLeaseBanner";
+
 
 const Index = () => {
   const [open, setOpen] = useState(false);
@@ -40,6 +42,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <PreLeaseBanner />
+      
       <Partners />
       <About />
             <Projects />   {/* ✅ New Projects Section */}
