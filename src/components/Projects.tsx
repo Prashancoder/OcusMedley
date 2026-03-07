@@ -63,12 +63,12 @@ const Projects = () => {
               </span>
             </div>
 
-            <div className="flex justify-between border-b pb-3">
+            {/* <div className="flex justify-between border-b pb-3">
               <span className="font-semibold text-gray-700">Floors</span>
               <span className="font-medium">
                 G + 19 Floors
               </span>
-            </div>
+            </div> */}
 
             <div className="flex justify-between border-b pb-3">
               <span className="font-semibold text-gray-700">Total Built-up Area</span>

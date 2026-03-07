@@ -38,6 +38,7 @@ const LeadForm = ({
   const { toast } = useToast();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -78,13 +79,10 @@ const LeadForm = ({
       property_project_name: "Ocus Medley",
     };
 
-    // Store form data in sessionStorage for background submission
-    sessionStorage.setItem('pendingLead', JSON.stringify(payload));
+    sessionStorage.setItem("pendingLead", JSON.stringify(payload));
 
-    // Navigate to thank you page immediately
-    navigate('/thank-you');
+    navigate("/thank-you");
 
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -103,86 +101,84 @@ const LeadForm = ({
   const FormCard = (
     <Card
       className={cn(
-        "rounded-2xl shadow-xl border bg-white/90 backdrop-blur-xl transition hover:shadow-2xl",
+        "rounded-xl shadow-lg border bg-white/90 backdrop-blur-xl",
         transparent ? "bg-background/50 border-white/20" : ""
       )}
     >
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-black">
+      <CardHeader className="pb-2">
+        <CardTitle className="text-lg font-bold text-black">
           Book Your Site Visit
         </CardTitle>
-        <CardDescription className="text-base text-gray-600">
-          Fill in your details to receive brochure, pricing & availability.
+        <CardDescription className="text-sm text-gray-600">
+          Get brochure, pricing & availability.
         </CardDescription>
       </CardHeader>
 
-      <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-5">
+      <CardContent className="p-4">
+        <form onSubmit={handleSubmit} className="space-y-3">
+
           <div>
-            <Label className="flex items-center gap-2 font-semibold">
-              <User size={16} />
+            <Label className="flex items-center gap-2 text-sm font-medium">
+              <User size={14} />
               Full Name *
             </Label>
             <Input
               type="text"
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
-              placeholder=""
               required
-              className="mt-2 rounded-lg"
+              className="mt-1 h-9 text-sm rounded-md"
             />
           </div>
 
           <div>
-            <Label className="flex items-center gap-2 font-semibold">
-              <Phone size={16} />
+            <Label className="flex items-center gap-2 text-sm font-medium">
+              <Phone size={14} />
               Phone Number *
             </Label>
             <Input
               type="tel"
               value={formData.phone}
               onChange={(e) => handleChange("phone", e.target.value)}
-              placeholder=""
               required
-              className="mt-2 rounded-lg"
+              className="mt-1 h-9 text-sm rounded-md"
             />
           </div>
 
           <div>
-            <Label className="flex items-center gap-2 font-semibold">
-              <Mail size={16} />
+            <Label className="flex items-center gap-2 text-sm font-medium">
+              <Mail size={14} />
               Email Address
             </Label>
             <Input
               type="email"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
-              placeholder=""
-              className="mt-2 rounded-lg"
+              className="mt-1 h-9 text-sm rounded-md"
             />
           </div>
 
           <div>
-            <Label className="flex items-center gap-2 font-semibold">
-              <MessageSquare size={16} />
-              Preferred Visit Date/Best time to Connect
-                          </Label>
+            <Label className="flex items-center gap-2 text-sm font-medium">
+              <MessageSquare size={14} />
+              Preferred Visit Date
+            </Label>
             <Textarea
               value={formData.message}
               onChange={(e) => handleChange("message", e.target.value)}
-              placeholder=" "
-              rows={3}
-              className="mt-2 rounded-lg"
+              rows={2}
+              className="mt-1 text-sm rounded-md"
             />
           </div>
 
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 text-lg font-semibold rounded-lg text-white bg-black hover:opacity-90"
+            className="w-full py-2 text-sm font-semibold rounded-md text-white bg-black hover:opacity-90"
           >
-            {isSubmitting ? "Submitting..." : "✨ Request Callback"}
+            {isSubmitting ? "Submitting..." : "Request Callback"}
           </Button>
+
         </form>
       </CardContent>
     </Card>
@@ -191,19 +187,19 @@ const LeadForm = ({
   if (variant === "compact") return FormCard;
 
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl font-bold text-black">
+        <div className="max-w-4xl mx-auto text-center mb-10">
+          <h2 className="text-3xl font-bold text-black">
             Schedule Your Site Visit
           </h2>
-          <p className="text-gray-600 mt-4">
-          Connect with us for premium commercial investment opportunities at
-          OCUS Medley, Sector 99, Gurugram
+          <p className="text-gray-600 mt-3">
+            Connect with us for premium commercial investment opportunities at
+            OCUS Medley, Sector 99, Gurugram
           </p>
         </div>
 
-        <div className="max-w-md mx-auto">{FormCard}</div>
+        <div className="max-w-sm mx-auto">{FormCard}</div>
       </div>
     </section>
   );
