@@ -22,10 +22,7 @@ const Footer = () => {
               <span>9971809303</span>
             </div>
 
-            <div className="flex items-center gap-2 justify-center md:justify-start text-gray-300 text-sm">
-              <Mail size={16} />
-              <span>lavneetdabas26@gmail.com</span>
-            </div>
+     
 
             <div className="text-gray-500 text-xs">
               RERA No: ________

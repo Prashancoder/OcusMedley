@@ -154,7 +154,6 @@ const TermsConditions = () => {
                 <p><strong>Project Inquiry Desk</strong></p>
                 <p>OCUS MEDLEY, Sector 99, Dwarka Expressway, Gurugram</p>
                 <p>Phone: 9971809303</p>
-                <p>Email: lavneetdabas26@gmail.com</p>
               </div>
             </section>
 
