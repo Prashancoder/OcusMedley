@@ -60,15 +60,6 @@ const LeadForm = ({
       return;
     }
 
-    if (!API_URL) {
-      toast({
-        title: "Configuration error",
-        description: "API URL is not configured properly.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     setIsSubmitting(true);
 
     const payload = {
@@ -80,7 +71,6 @@ const LeadForm = ({
     };
 
     sessionStorage.setItem("pendingLead", JSON.stringify(payload));
-
     navigate("/thank-you");
 
     setFormData({
@@ -101,25 +91,28 @@ const LeadForm = ({
   const FormCard = (
     <Card
       className={cn(
-        "rounded-xl shadow-lg border bg-white/90 backdrop-blur-xl",
+        "rounded-2xl shadow-xl border border-gray-100 bg-white/95 backdrop-blur-lg",
         transparent ? "bg-background/50 border-white/20" : ""
       )}
     >
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg font-bold text-black">
-          Book Your Site Visit
+      <CardHeader className="text-center pb-4">
+        <CardTitle className="text-xl font-bold">
+          <span className="text-black">Book Your </span>
+          <span style={{ color: "#F77714" }}>Site Visit</span>
         </CardTitle>
+
         <CardDescription className="text-sm text-gray-600">
           Get brochure, pricing & availability.
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="p-4">
-        <form onSubmit={handleSubmit} className="space-y-3">
+      <CardContent className="p-6">
+        <form onSubmit={handleSubmit} className="space-y-4">
 
+          {/* Name */}
           <div>
             <Label className="flex items-center gap-2 text-sm font-medium">
-              <User size={14} />
+              <User size={16} className="text-[#F77714]" />
               Full Name *
             </Label>
             <Input
@@ -127,13 +120,14 @@ const LeadForm = ({
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
               required
-              className="mt-1 h-9 text-sm rounded-md"
+              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714] focus:ring-[#F77714]"
             />
           </div>
 
+          {/* Phone */}
           <div>
             <Label className="flex items-center gap-2 text-sm font-medium">
-              <Phone size={14} />
+              <Phone size={16} className="text-[#F77714]" />
               Phone Number *
             </Label>
             <Input
@@ -141,40 +135,43 @@ const LeadForm = ({
               value={formData.phone}
               onChange={(e) => handleChange("phone", e.target.value)}
               required
-              className="mt-1 h-9 text-sm rounded-md"
+              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714] focus:ring-[#F77714]"
             />
           </div>
 
+          {/* Email */}
           <div>
             <Label className="flex items-center gap-2 text-sm font-medium">
-              <Mail size={14} />
+              <Mail size={16} className="text-[#F77714]" />
               Email Address
             </Label>
             <Input
               type="email"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
-              className="mt-1 h-9 text-sm rounded-md"
+              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714] focus:ring-[#F77714]"
             />
           </div>
 
+          {/* Message */}
           <div>
             <Label className="flex items-center gap-2 text-sm font-medium">
-              <MessageSquare size={14} />
+              <MessageSquare size={16} className="text-[#F77714]" />
               Preferred Visit Date
             </Label>
             <Textarea
               value={formData.message}
               onChange={(e) => handleChange("message", e.target.value)}
               rows={2}
-              className="mt-1 text-sm rounded-md"
+              className="mt-2 rounded-lg border-gray-200 focus:border-[#F77714] focus:ring-[#F77714]"
             />
           </div>
 
+          {/* CTA */}
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-2 text-sm font-semibold rounded-md text-white bg-black hover:opacity-90"
+            className="w-full py-3 text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-[#F77714] to-orange-500 hover:opacity-90 transition-all duration-300"
           >
             {isSubmitting ? "Submitting..." : "Request Callback"}
           </Button>
@@ -187,20 +184,26 @@ const LeadForm = ({
   if (variant === "compact") return FormCard;
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-24 bg-gray-50">
+
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-10">
-          <h2 className="text-3xl font-bold text-black">
-            Schedule Your Site Visit
+
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Schedule Your <span style={{ color: "#F77714" }}>Site Visit</span>
           </h2>
-          <p className="text-gray-600 mt-3">
-            Connect with us for premium commercial investment opportunities at
-            OCUS Medley, Sector 99, Gurugram
+
+          <p className="text-gray-600 mt-4">
+            Connect with us for more details about OCUS Medley commercial project.
           </p>
         </div>
 
-        <div className="max-w-sm mx-auto">{FormCard}</div>
+        <div className="max-w-md mx-auto">
+          {FormCard}
+        </div>
+
       </div>
+
     </section>
   );
 };
