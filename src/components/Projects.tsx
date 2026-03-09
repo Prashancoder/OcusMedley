@@ -1,25 +1,20 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const Projects = () => {
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-24 bg-gray-50" id="projects">
       
       {/* Section Heading */}
       <div className="text-center mb-16 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
-          OCUS MEDLEY – Premium Commercial Investment
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <span className="text-black">OCUS </span>
+          <span style={{ color: "#F77714" }}>MEDLEY</span>
         </h2>
+
         <p className="text-gray-600 text-lg md:text-xl">
-          Sector 99, Dwarka Expressway, Gurugram
+          Mega Mixed Commercial High Street Retail (Ready to Move)
         </p>
+
         <span className="block h-1 w-24 bg-yellow-500 mx-auto mt-5 rounded-full"></span>
       </div>
 
@@ -27,75 +22,67 @@ const Projects = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="bg-white shadow-2xl rounded-3xl p-10 md:p-14 text-center">
 
-          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-            Next-Generation Commercial Destination
-          </h3>
-
           <p className="text-gray-600 mb-10 text-lg leading-relaxed">
-            OCUS MEDLEY is a premium mixed-use commercial development bringing
-            together high street retail, food court, multiplex and premium
-            office spaces under one iconic destination on Dwarka Expressway.
-            Designed to deliver strong business growth and long-term
-            investment potential.
+            BRINGING IT ALL TOGETHER - Retail Shops, 3 screen Multiplex,
+            Food Court, Restaurants, Family Entertainment Zone,
+            Office Space, Restaurants & Restrobars.
           </p>
 
           {/* Project Details */}
           <div className="space-y-4 mb-10 text-left">
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Location</span>
+              <span className="font-semibold text-gray-700">Units</span>
               <span className="font-medium">
-                Sector 99, Dwarka Expressway, Gurugram
+                Pre Leased and self Use Lockable units
               </span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Configuration</span>
+              <span className="font-semibold text-gray-700">Apartments Nearby</span>
               <span className="font-medium">
-                Retail Shops | Food Court | Multiplex | Office Spaces
+                Surrounded by more than 50000 Apartments
               </span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Project Type</span>
+              <span className="font-semibold text-gray-700">Families Nearby</span>
               <span className="font-medium">
-                Mixed Use Commercial Development
+                Nearly 4 Lacs Families already Residing nearby
               </span>
             </div>
 
-            {/* <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Floors</span>
+            <div className="flex justify-between border-b pb-3">
+              <span className="font-semibold text-gray-700">Project Area</span>
               <span className="font-medium">
-                G + 19 Floors
+                Spread over Approx 4.14 Acres
               </span>
-            </div> */}
+            </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Total Built-up Area</span>
+              <span className="font-semibold text-gray-700">Anchor Spaces</span>
               <span className="font-medium">
-                4,72,799 Sq Ft
+                Dedicated Anchor spaces
               </span>
             </div>
 
             <div className="flex justify-between">
-              <span className="font-semibold text-gray-700">Parking</span>
-              <span className="font-medium text-red-600">
-                669+ Car Parking Spaces
+              <span className="font-semibold text-gray-700">Maintenance</span>
+              <span className="font-medium">
+                Low maintenance module
               </span>
             </div>
 
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="flex flex-col gap-4">
 
             <a
-              href="tel:919971809303"
+              href="tel:+918527133220"
               className="text-center bg-yellow-500 text-black py-4 text-lg font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300"
             >
-              Flexible Investment Opportunities Available <br /><br />
-              Early Booking Recommended <br /><br />
-              📞 Call Now – 9971809303
+              📞 Call Now – +91 8527133220
             </a>
 
           </div>
