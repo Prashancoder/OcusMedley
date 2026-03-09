@@ -62,10 +62,10 @@ const Hero = () => {
               <div className="flex flex-wrap gap-4">
 
                 <a
-                  href="tel:918527133220"
+                  href="tel:919971809303"
                   className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition"
                 >
-                  📞 Call Now – 8527133220
+                  📞 Call Now – 9971809303
                 </a>
 
                 <a

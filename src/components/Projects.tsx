@@ -79,10 +79,10 @@ const Projects = () => {
           <div className="flex flex-col gap-4">
 
             <a
-              href="tel:+918527133220"
+              href="tel:+919971809303"
               className="text-center bg-yellow-500 text-black py-4 text-lg font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300"
             >
-              📞 Call Now – +91 8527133220
+              📞 Call Now – +91 9971809303
             </a>
 
           </div>
