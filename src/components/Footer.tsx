@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,32 +7,45 @@ const Footer = () => {
     <footer className="bg-black text-white font-sans">
       <div className="container mx-auto px-6 py-12">
 
-        {/* Main Footer Content */}
-        <div className="text-center max-w-3xl mx-auto space-y-6">
+        {/* Top Section */}
+        <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          <h3 className="text-2xl font-bold">
-          OCUS MEDLEY
-          </h3>
+          {/* Left Side - Info */}
+          <div className="space-y-4 text-center md:text-left">
 
+            <h3 className="text-2xl font-bold">
+              OCUS MEDLEY
+            </h3>
 
-          {/* Contact Info */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-300 text-sm">
-
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 justify-center md:justify-start text-gray-300 text-sm">
               <Phone size={16} />
               <span>9971809303</span>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 justify-center md:justify-start text-gray-300 text-sm">
               <Mail size={16} />
               <span>lavneetdabas26@gmail.com</span>
             </div>
 
+            <div className="text-gray-500 text-xs">
+              RERA No: ________
+            </div>
+
           </div>
 
-          {/* RERA Placeholder */}
-          <div className="text-gray-500 text-xs">
-            RERA No: ________
+          {/* Right Side - Google Map */}
+          <div className="w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54300.74207006621!2d77.00196480478911!3d28.46870132416329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1701500ae343%3A0x5917b5ea25ecc617!2sOcus%20Medley!5e1!3m2!1sen!2sin!4v1773038182708!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              className="rounded-lg"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ocus Medley Location"
+            ></iframe>
           </div>
 
         </div>
@@ -54,10 +67,8 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Mandatory Legal Disclaimer */}
           <div className="max-w-2xl mx-auto text-gray-500 leading-relaxed">
-          This website is an independent property information platform and is not the official website of the developer. The content provided is for informational purposes only and does not constitute any legal offer or contract. All prices, specifications and availability are subject to change without prior notice. Images used on this website are for illustrative purposes only.
-
+            This website is an independent property information platform and is not the official website of the developer. The content provided is for informational purposes only and does not constitute any legal offer or contract. All prices, specifications and availability are subject to change without prior notice. Images used on this website are for illustrative purposes only.
           </div>
 
         </div>
