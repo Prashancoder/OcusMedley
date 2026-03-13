@@ -47,14 +47,17 @@ const Index = () => {
       <Hero />
       {/* <PreLeaseBanner /> */}
       
-      <Partners />
             <Projects />   {/* ✅ New Projects Section */}
+            <Partners />
+
             {/* <Newplot/>  */}
                         {/* <CompanySection />  */}
 
       {/* <Associations /> */}
 
-            <WhyChoose />   {/* ✅ Yeh ab alag component aa gaya */}
+            {/* <WhyChoose />   */}
+            
+             {/* ✅ Yeh ab alag component aa gaya */}
             {/* <Services /> */}
             <About />
 
