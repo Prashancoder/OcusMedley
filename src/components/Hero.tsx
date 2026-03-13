@@ -1,234 +1,122 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, User, MessageSquare } from "lucide-react";
-import { cn } from "@/lib/utils";
+import heroBg from '@/assets/desktopbanner1.jpeg';
+import heroBgMobile from '@/assets/mobilebanner1.jpeg';
+import LeadForm from '@/components/LeadForm';
 
-interface FormData {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-}
-
-type LeadFormVariant = "full" | "compact";
-
-interface LeadFormProps {
-  variant?: LeadFormVariant;
-  transparent?: boolean;
-  onSubmitted?: () => void;
-}
-
-const LeadForm = ({
-  variant = "full",
-  transparent = false,
-  onSubmitted,
-}: LeadFormProps) => {
-  const { toast } = useToast();
-  const navigate = useNavigate();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!formData.name.trim() || !formData.phone.trim()) {
-      toast({
-        title: "Required fields missing",
-        description: "Please enter your name and phone number.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    const payload = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-      property_project_name: "Ocus Medley",
-    };
-
-    sessionStorage.setItem("pendingLead", JSON.stringify(payload));
-    navigate("/thank-you");
-
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-
-    if (onSubmitted) onSubmitted();
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (field: keyof FormData, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-  };
-
-  const FormCard = (
-    <Card
-      className={cn(
-        "rounded-2xl shadow-xl border border-gray-100 bg-white/95 backdrop-blur-lg",
-        transparent ? "bg-background/50 border-white/20" : ""
-      )}
-    >
-      <CardHeader className="text-center pb-4">
-        <CardTitle className="text-xl font-bold">
-          <span className="text-black">Book Your </span>
-          <span className="text-[#F77714]">Site Visit</span>
-        </CardTitle>
-
-        <CardDescription className="text-sm text-gray-600">
-          Get brochure, pricing & availability.
-        </CardDescription>
-      </CardHeader>
-
-      <CardContent className="p-6">
-        <form onSubmit={handleSubmit} className="space-y-4">
-
-          <div>
-            <Label className="flex items-center gap-2 text-sm font-medium">
-              <User size={16} className="text-[#F77714]" />
-              Full Name *
-            </Label>
-            <Input
-              type="text"
-              value={formData.name}
-              onChange={(e) => handleChange("name", e.target.value)}
-              required
-              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714]"
-            />
-          </div>
-
-          <div>
-            <Label className="flex items-center gap-2 text-sm font-medium">
-              <Phone size={16} className="text-[#F77714]" />
-              Phone Number *
-            </Label>
-            <Input
-              type="tel"
-              value={formData.phone}
-              onChange={(e) => handleChange("phone", e.target.value)}
-              required
-              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714]"
-            />
-          </div>
-
-          <div>
-            <Label className="flex items-center gap-2 text-sm font-medium">
-              <Mail size={16} className="text-[#F77714]" />
-              Email Address
-            </Label>
-            <Input
-              type="email"
-              value={formData.email}
-              onChange={(e) => handleChange("email", e.target.value)}
-              className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714]"
-            />
-          </div>
-
-          <div>
-            <Label className="flex items-center gap-2 text-sm font-medium">
-              <MessageSquare size={16} className="text-[#F77714]" />
-              Preferred Visit Date
-            </Label>
-            <Textarea
-              value={formData.message}
-              onChange={(e) => handleChange("message", e.target.value)}
-              rows={2}
-              className="mt-2 rounded-lg border-gray-200 focus:border-[#F77714]"
-            />
-          </div>
-
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full py-3 text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-[#F77714] to-orange-500"
-          >
-            {isSubmitting ? "Submitting..." : "Request Callback"}
-          </Button>
-
-        </form>
-      </CardContent>
-    </Card>
-  );
-
-  if (variant === "compact") return FormCard;
-
+const Hero = () => {
   return (
-    <section id="contact" className="py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <>
+      <section id="home" className="relative min-h-screen flex items-center pt-20 md:pt-0">
 
-        {/* Intro + CTA Container */}
-        <div className="max-w-5xl mx-auto text-center mb-16 bg-white rounded-3xl shadow-xl p-10 border border-gray-100">
+        {/* Background Images */}
+        <div
+          className="hidden md:block absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
 
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
-            <span className="text-black">OCUS MEDLEY</span>
-            <span className="text-[#F77714]"> – The Medley of Good Times</span>
-          </h2>
+        <div className="block md:hidden absolute inset-0">
+          <img
+            src={heroBgMobile}
+            alt="OCUS Medley Galleria 99 Sector 99 Gurugram"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          <p className="text-lg md:text-xl text-gray-700 font-medium mb-4">
-            Shop. Work. Dine. Entertain. Experience It All.
-          </p>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-          <div className="inline-block bg-orange-50 text-[#F77714] px-5 py-2 rounded-full text-sm font-semibold mb-6">
-            📍 Sector 99, Dwarka Expressway, Gurugram
-          </div>
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mb-10">
-            Connect with us today for leasing and investment opportunities and
-            secure your space in Gurugram’s next iconic commercial destination.
-          </p>
+            {/* LEFT SIDE CONTENT */}
+            <div className="bg-gray-700/60 backdrop-blur-md p-8 rounded-xl border border-gray-500/30 shadow-2xl max-w-xl">
 
-          {/* Site Visit CTA */}
-          <div className="border-t pt-8">
+              <div className="inline-block px-4 py-1 mb-4 bg-orange-500 text-white text-sm font-bold rounded-full uppercase tracking-widest">
+              The  Ultimate Retail & Business Landmark, <br />Bang on Dwarka Expressway
+              </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mb-3">
-              Schedule Your <span className="text-[#F77714]">Site Visit</span>
-            </h3>
+              <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                OCUS MEDLEY 
+                <span className="block text-orange-400 text-lg mt-1">
+                  Sector 99, Dwarka Expressway, Gurugram <br />Exclusive Pre-leased and Ready-to-Move Vacant Spaces
+                </span>
+              </h1>
 
-            <p className="text-gray-600 text-lg mb-6">
-              Connect with our property experts to get pricing, availability
-              and investment insights for OCUS Medley.
-            </p>
+              <p className="text-gray-200 mb-6 text-sm md:text-base">
+              Welcome to Galleria 99 at Ocus Medley, an upscale high-street retail commercial development strategically positioned on Dwarka Expressway, Sector 99, Gurugram. 
+              Crafted as a dynamic lifestyle destination, it harmoniously integrates shopping, dining, entertainment, and premium office spaces within one iconic address.
+              </p>
 
-            <div className="inline-block bg-[#F77714] text-white px-6 py-3 rounded-full font-semibold">
-              Book Your Site Visit
+              <span className="block text-orange-400 font-bold text-lg mt-1">
+                  Most Successful High Street Destination <br /> at Prime Location with Exceptional Connectivity 
+                </span>
+<br />
+                <span className="block text-white font-bold text-lg mt-1">
+                   Growing Hotspots For Leading Brands ! <br />Lockable Shops Starts at 75 Lakhs* Onwards
+                </span>
+                <br />
+
+{/* 
+              <div className="space-y-2 text-gray-200 text-sm mb-6">
+
+                <p>✓ •	1,00,000+ High Net-Worth Families</p>
+                <p>✓ •	50+ Residential Developments </p>
+                <p>✓ •	10+ Landmark Luxury Projects</p>
+                <p>✓ •	Dense premium neighborhood</p>
+                <p>✓ •	Excellent footfall from both New Gurgaon & established city zones</p>
+
+
+
+              </div> */}
+
+              <div className="flex flex-wrap gap-4">
+
+                <a
+                  href="tel:919971809303"
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+                >
+                  📞 Call Now – 9971809303
+                </a>
+
+
+
+              </div>
+
+ 
+
+            </div>
+
+
+            {/* RIGHT SIDE FORM */}
+            <div className="hidden md:flex justify-end items-start">
+              <div className="w-full max-w-xs bg-white/90 p-3 rounded-lg shadow-lg">
+
+                <LeadForm variant="compact" />
+
+              </div>
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* MOBILE FORM */}
+      <section className="block md:hidden bg-slate-50 py-10 px-4">
+        <div className="max-w-md mx-auto text-center">
+
+          <h2 className="text-2xl font-bold text-slate-800 mb-2">
+            Book Your Site Visit
+          </h2>
+
+          <p className="text-slate-600 mb-6 text-sm">
+            Share your details to receive pricing and investment details.
+          </p>
+
+          <LeadForm variant="compact" />
 
         </div>
-
-        {/* Form */}
-        <div className="max-w-md mx-auto">
-          {FormCard}
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default LeadForm;
+export default Hero;
