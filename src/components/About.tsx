@@ -10,14 +10,13 @@ import artwork from '../assets/artwork.jpeg';
 const About = () => {
 
   const highlights = [
-    "Mega Mixed Commercial High Street Retail (Ready to Move)",
-    "Retail Shops, 3 screen Multiplex, Food Court, Restaurants, Family Entertainment Zone, Office Space, Restaurants & Restrobars",
-    "Pre Leased and self Use Lockable units",
-    "Surrounded by more than 50000 Apartments",
-    "Nearly 4 Lacs Families already Residing nearby",
-    "Spread over Approx 4.14 Acres",
-    "Dedicated Anchor spaces",
-    "Low maintenance module",
+    "Premium High-Street Retail Destination",
+    "Anchor Spaces & Multiplex",
+    "Vibrant F&B Zone",
+    "Amphitheatre",
+    "Extensive Parking Infrastructure",
+    "Grade ‘A’ Corporate Tower",
+    "Integrated Work–Retail–Lifestyle Concept",
   ];
 
   return (
@@ -48,9 +47,10 @@ const About = () => {
 
           {/* Improved Heading */}
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">
-            <span className="text-slate-900">Mega Mixed </span>
+            <span className="text-slate-900">Exclusive Pre-Leased & </span>
+
             <span style={{ color: "#EA7910" }}>
-              Commercial High Street Retail
+            Ready-to-Move Vacant Spaces Available
             </span>
           </h2>
 
