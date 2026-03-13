@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="text-center mb-16 px-4">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           <span className="text-black">Location </span>
-          <span style={{ color: "#F77714" }}>Advantage !</span>
+          <span style={{ color: "#F77714" }}>Advantage!</span>
         </h2>
 
         <p className="text-gray-600 text-lg md:text-xl">

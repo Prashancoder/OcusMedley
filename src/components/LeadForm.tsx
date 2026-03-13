@@ -98,7 +98,7 @@ const LeadForm = ({
       <CardHeader className="text-center pb-4">
         <CardTitle className="text-xl font-bold">
           <span className="text-black">Book Your </span>
-          <span style={{ color: "#F77714" }}>Site Visit</span>
+          <span className="text-[#F77714]">Site Visit</span>
         </CardTitle>
 
         <CardDescription className="text-sm text-gray-600">
@@ -157,8 +157,7 @@ const LeadForm = ({
           <div>
             <Label className="flex items-center gap-2 text-sm font-medium">
               <MessageSquare size={16} className="text-[#F77714]" />
-              Preferred Visit Date
-            </Label>
+              Preferred Visit Date/Best time to Connect            </Label>
             <Textarea
               value={formData.message}
               onChange={(e) => handleChange("message", e.target.value)}
@@ -188,16 +187,47 @@ const LeadForm = ({
 
       <div className="container mx-auto px-4">
 
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Schedule Your <span style={{ color: "#F77714" }}>Site Visit</span>
+        {/* Premium Project Intro */}
+        <div className="max-w-5xl mx-auto text-center mb-16 bg-white rounded-3xl shadow-xl p-10 border border-gray-100">
+
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+            <span className="text-black">OCUS MEDLEY</span>
+            <span className="text-[#F77714]"> – The Medley of Good Times</span>
           </h2>
 
-          <p className="text-gray-600 mt-4">
-            Connect with us for more details about OCUS Medley commercial project.
+          <p className="text-lg md:text-xl text-gray-700 font-medium mb-4">
+            Shop. Work. Dine. Entertain. Experience It All.
           </p>
+
+          <div className="inline-block bg-orange-50 text-[#F77714] px-5 py-2 rounded-full text-sm font-semibold mb-5">
+            📍 Sector 99, Dwarka Expressway, Gurugram
+          </div>
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            Connect with us today for leasing and investment opportunities and
+            secure your space in{" "}
+            <span className="font-semibold text-gray-800">
+              Gurugram’s next iconic commercial destination.
+            </span>
+          </p>
+
         </div>
 
+        {/* Site Visit CTA */}
+        <div className="max-w-3xl mx-auto text-center mb-12">
+
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Schedule Your <span className="text-[#F77714]">Site Visit</span>
+          </h2>
+
+          <p className="text-gray-600 text-lg">
+            Connect with our property experts to get pricing, availability and
+            investment insights for OCUS Medley.
+          </p>
+
+        </div>
+
+        {/* Form */}
         <div className="max-w-md mx-auto">
           {FormCard}
         </div>
