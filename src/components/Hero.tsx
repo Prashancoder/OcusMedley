@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="block md:hidden absolute inset-0">
           <img
             src={heroBgMobile}
-            alt="OCUS Medley Dwarka Expressway Gurugram"
+            alt="OCUS Medley Galleria 99 Sector 99 Gurugram"
             className="w-full h-full object-cover"
           />
         </div>
@@ -31,31 +31,30 @@ const Hero = () => {
             <div className="bg-gray-700/60 backdrop-blur-md p-8 rounded-xl border border-gray-500/30 shadow-2xl max-w-xl">
 
               <div className="inline-block px-4 py-1 mb-4 bg-orange-500 text-white text-sm font-bold rounded-full uppercase tracking-widest">
-                Mega Mixed Commercial High Street Retail
+                Ultimate Retail & Business Landmark
               </div>
 
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                OCUS MEDLEY
+                OCUS MEDLEY – GALLERIA 99
                 <span className="block text-orange-400 text-lg mt-1">
-                  Dwarka Expressway, Gurugram
+                  Sector 99, Dwarka Expressway, Gurugram
                 </span>
               </h1>
 
               <p className="text-gray-200 mb-6 text-sm md:text-base">
-                BRINGING IT ALL TOGETHER - Retail Shops, 3 Screen Multiplex,
-                Food Court, Restaurants, Family Entertainment Zone, Office Space,
-                Restaurants & Restrobars.
+              Welcome to Galleria 99 at Ocus Medley, an upscale high-street retail commercial development strategically positioned on Dwarka Expressway, Sector 99, Gurugram. 
+              Crafted as a dynamic lifestyle destination, it harmoniously integrates shopping, dining, entertainment, and premium office spaces within one iconic address.
               </p>
 
               <div className="space-y-2 text-gray-200 text-sm mb-6">
 
-                <p>✓ Pre Leased and Self Use Lockable Units</p>
-                <p>✓ Surrounded by 50,000+ Apartments</p>
-                <p>✓ Nearly 4 Lacs Families Already Residing Nearby</p>
-                <p>✓ One of the Biggest Commercial on Dwarka Expressway</p>
-                <p>✓ Outdoor Patio, Water Bodies & Amphitheater Area</p>
-                <p>✓ Huge Atrium Area</p>
-                <p>✓ Ample Surface & Basement Parking</p>
+                <p>✓ •	1,00,000+ High Net-Worth Families</p>
+                <p>✓ •	50+ Residential Developments </p>
+                <p>✓ •	10+ Landmark Luxury Projects</p>
+                <p>✓ •	Dense premium neighborhood</p>
+                <p>✓ •	Excellent footfall from both New Gurgaon & established city zones</p>
+
+
 
               </div>
 
@@ -92,14 +91,14 @@ const Hero = () => {
             </div>
 
 
-              {/* RIGHT SIDE FORM */}
-              <div className="hidden md:flex justify-end items-start">
-  <div className="w-full max-w-xs bg-white/90 p-3 rounded-lg shadow-lg">
+            {/* RIGHT SIDE FORM */}
+            <div className="hidden md:flex justify-end items-start">
+              <div className="w-full max-w-xs bg-white/90 p-3 rounded-lg shadow-lg">
 
-    <LeadForm variant="compact" />
+                <LeadForm variant="compact" />
 
-  </div>
-</div>
+              </div>
+            </div>
 
           </div>
         </div>
