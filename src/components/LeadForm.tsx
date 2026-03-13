@@ -96,29 +96,17 @@ const LeadForm = ({
       )}
     >
       <CardHeader className="text-center pb-4">
-
-        <CardTitle className="text-xl font-bold leading-snug">
-          <span className="text-black">OCUS MEDLEY – </span>
-          <span style={{ color: "#F77714" }}>The Medley of Good Times</span>
+        <CardTitle className="text-xl font-bold">
+          <span className="text-black">Book Your </span>
+          <span style={{ color: "#F77714" }}>Site Visit</span>
         </CardTitle>
 
-        <CardDescription className="text-sm text-gray-600 mt-2">
-          Shop. Work. Dine. Entertain. Experience It All.
+        <CardDescription className="text-sm text-gray-600">
+          Get brochure, pricing & availability.
         </CardDescription>
-
-        <p className="text-xs text-gray-500 mt-2">
-          📍 Sector 99, Dwarka Expressway, Gurugram
-        </p>
-
       </CardHeader>
 
       <CardContent className="p-6">
-
-        <p className="text-sm text-gray-600 text-center mb-4">
-          Connect with us today for leasing and investment opportunities
-          and secure your space in Gurugram’s next iconic commercial destination.
-        </p>
-
         <form onSubmit={handleSubmit} className="space-y-4">
 
           {/* Name */}
@@ -149,10 +137,6 @@ const LeadForm = ({
               required
               className="mt-2 h-10 rounded-lg border-gray-200 focus:border-[#F77714] focus:ring-[#F77714]"
             />
-
-            <p className="text-xs text-gray-500 mt-1">
-              Our property advisor will call you within 5 minutes.
-            </p>
           </div>
 
           {/* Email */}
@@ -189,7 +173,7 @@ const LeadForm = ({
             disabled={isSubmitting}
             className="w-full py-3 text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-[#F77714] to-orange-500 hover:opacity-90 transition-all duration-300"
           >
-            {isSubmitting ? "Submitting..." : "Book Your Site Visit"}
+            {isSubmitting ? "Submitting..." : "Request Callback"}
           </Button>
 
         </form>
@@ -206,12 +190,11 @@ const LeadForm = ({
 
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Book Your <span style={{ color: "#F77714" }}>Site Visit</span>
+            Schedule Your <span style={{ color: "#F77714" }}>Site Visit</span>
           </h2>
 
           <p className="text-gray-600 mt-4">
-            Connect with us for leasing and investment opportunities at
-            OCUS Medley, Sector 99 Dwarka Expressway Gurugram.
+            Connect with us for more details about OCUS Medley commercial project.
           </p>
         </div>
 
