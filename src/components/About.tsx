@@ -55,8 +55,8 @@ const About = () => {
           </h2>
 
           <p className="text-slate-600 text-sm md:text-base max-w-3xl mx-auto">
-            Retail Shops, 3 screen Multiplex, Food Court, Restaurants,
-            Family Entertainment Zone, Office Space, Restaurants & Restrobars.
+
+          Invest in DwarkaExpressway Most Successful High Street Destination
           </p>
         </motion.div>
 
