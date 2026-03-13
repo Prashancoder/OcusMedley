@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="bg-gray-700/60 backdrop-blur-md p-8 rounded-xl border border-gray-500/30 shadow-2xl max-w-xl">
 
               <div className="inline-block px-4 py-1 mb-4 bg-orange-500 text-white text-sm font-bold rounded-full uppercase tracking-widest">
-                Ultimate Retail & Business Landmark
+              The  Ultimate Retail & Business Landmark
               </div>
 
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
