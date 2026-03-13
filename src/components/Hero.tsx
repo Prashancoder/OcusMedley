@@ -31,13 +31,13 @@ const Hero = () => {
             <div className="bg-gray-700/60 backdrop-blur-md p-8 rounded-xl border border-gray-500/30 shadow-2xl max-w-xl">
 
               <div className="inline-block px-4 py-1 mb-4 bg-orange-500 text-white text-sm font-bold rounded-full uppercase tracking-widest">
-              The  Ultimate Retail & Business Landmark
+              The  Ultimate Retail & Business Landmark, <br />Bang on Dwarka Expressway
               </div>
 
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                OCUS MEDLEY – GALLERIA 99
+                OCUS MEDLEY 
                 <span className="block text-orange-400 text-lg mt-1">
-                  Sector 99, Dwarka Expressway, Gurugram
+                  Sector 99, Dwarka Expressway, Gurugram <br />Exclusive Pre-leased and Ready-to-Move Vacant Spaces
                 </span>
               </h1>
 
@@ -46,6 +46,16 @@ const Hero = () => {
               Crafted as a dynamic lifestyle destination, it harmoniously integrates shopping, dining, entertainment, and premium office spaces within one iconic address.
               </p>
 
+              <span className="block text-orange-400 font-bold text-lg mt-1">
+                  Most Successful High Street Destination <br /> at Prime Location with Exceptional Connectivity 
+                </span>
+<br />
+                <span className="block text-orange-400 font-bold text-lg mt-1">
+                   Growing Hotspots For Leading Brands !
+                </span>
+                <br />
+
+{/* 
               <div className="space-y-2 text-gray-200 text-sm mb-6">
 
                 <p>✓ •	1,00,000+ High Net-Worth Families</p>
@@ -56,7 +66,7 @@ const Hero = () => {
 
 
 
-              </div>
+              </div> */}
 
               <div className="flex flex-wrap gap-4">
 
@@ -67,26 +77,11 @@ const Hero = () => {
                   📞 Call Now – 9971809303
                 </a>
 
-                <a
-                  href="https://maps.app.goo.gl/Vx85SkdjysCYXBTL8"
-                  target="_blank"
-                  className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg border border-white/30"
-                >
-                  View Location
-                </a>
+
 
               </div>
 
-              <p className="mt-4 text-xs text-gray-300">
-                YouTube :
-                <a
-                  href="https://youtube.com/@ocusindia?si=-5bPBnR-OK9cnZla"
-                  target="_blank"
-                  className="text-orange-400 ml-1 underline"
-                >
-                  OCUS India
-                </a>
-              </p>
+ 
 
             </div>
 

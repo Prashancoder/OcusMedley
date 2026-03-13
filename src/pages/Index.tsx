@@ -48,14 +48,16 @@ const Index = () => {
       {/* <PreLeaseBanner /> */}
       
       <Partners />
-      <About />
             <Projects />   {/* ✅ New Projects Section */}
             {/* <Newplot/>  */}
                         {/* <CompanySection />  */}
 
       {/* <Associations /> */}
+
             <WhyChoose />   {/* ✅ Yeh ab alag component aa gaya */}
             {/* <Services /> */}
+            <About />
+
             <Ecosystem />
             <Choose />
 

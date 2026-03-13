@@ -54,10 +54,10 @@ const About = () => {
             </span>
           </h2>
 
-          <p className="text-slate-600 text-sm md:text-base max-w-3xl mx-auto">
+          {/* <p className="text-slate-600 text-sm md:text-base max-w-3xl mx-auto">
 
-          Invest in DwarkaExpressway Most Successful High Street Destination
-          </p>
+        
+          </p> */}
         </motion.div>
 
         {/* Main Grid */}
