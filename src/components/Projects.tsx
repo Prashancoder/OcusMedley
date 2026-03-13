@@ -12,7 +12,7 @@ const Projects = () => {
         </h2>
 
         <p className="text-gray-600 text-lg md:text-xl">
-          Mega Mixed Commercial High Street Retail (Ready to Move)
+        Exclusive Pre-Leased & Ready-to-Move Vacant Spaces Available
         </p>
 
         <span className="block h-1 w-24 bg-yellow-500 mx-auto mt-5 rounded-full"></span>
