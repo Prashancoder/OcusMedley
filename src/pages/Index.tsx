@@ -13,6 +13,9 @@ import CompanySection from '@/components/CompanySection'; // ✅ Import new comp
 import Newplot from '@/components/newplot'; // ✅ Import new component
 import Partners from '@/components/Partners';
 import PreLeaseBanner from "@/components/PreLeaseBanner";
+import Ecosystem from "@/components/Ecosystem";
+import Choose from "@/components/Choose";
+
 
 
 const Index = () => {
@@ -53,6 +56,9 @@ const Index = () => {
       {/* <Associations /> */}
             <WhyChoose />   {/* ✅ Yeh ab alag component aa gaya */}
             {/* <Services /> */}
+            <Ecosystem />
+            <Choose />
+
 
 
       <LeadForm />

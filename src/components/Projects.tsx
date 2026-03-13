@@ -7,12 +7,13 @@ const Projects = () => {
       {/* Section Heading */}
       <div className="text-center mb-16 px-4">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          <span className="text-black">OCUS </span>
-          <span style={{ color: "#F77714" }}>MEDLEY</span>
+          <span className="text-black">Exceptional </span>
+          <span style={{ color: "#F77714" }}>Connectivity</span>
         </h2>
 
         <p className="text-gray-600 text-lg md:text-xl">
-        Exclusive Pre-Leased & Ready-to-Move Vacant Spaces Available
+          Strategically located on Dwarka Expressway ensuring seamless connectivity
+          between Delhi and Gurugram.
         </p>
 
         <span className="block h-1 w-24 bg-yellow-500 mx-auto mt-5 rounded-full"></span>
@@ -23,54 +24,48 @@ const Projects = () => {
         <div className="bg-white shadow-2xl rounded-3xl p-10 md:p-14 text-center">
 
           <p className="text-gray-600 mb-10 text-lg leading-relaxed">
-            BRINGING IT ALL TOGETHER - Retail Shops, 3 screen Multiplex,
-            Food Court, Restaurants, Family Entertainment Zone,
-            Office Space, Restaurants & Restrobars.
+            Positioned directly on Dwarka Expressway — a 29 km signal-free corridor
+            connecting Delhi and Gurugram — the project ensures excellent
+            accessibility, strong visibility, and easy connectivity to major
+            landmarks across the region.
           </p>
 
-          {/* Project Details */}
+          {/* Connectivity Details */}
           <div className="space-y-4 mb-10 text-left">
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Units</span>
-              <span className="font-medium">
-                Pre Leased and self Use Lockable units
-              </span>
+              <span className="font-semibold text-gray-700">Indira Gandhi International Airport</span>
+              <span className="font-medium">15–20 Minutes</span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Apartments Nearby</span>
-              <span className="font-medium">
-                Surrounded by more than 50000 Apartments
-              </span>
+              <span className="font-semibold text-gray-700">India International Convention & Expo Centre (IICC)</span>
+              <span className="font-medium">10 Minutes</span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Families Nearby</span>
-              <span className="font-medium">
-                Nearly 4 Lacs Families already Residing nearby
-              </span>
+              <span className="font-semibold text-gray-700">Diplomatic Enclave II</span>
+              <span className="font-medium">12 Minutes</span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Project Area</span>
-              <span className="font-medium">
-                Spread over Approx 4.14 Acres
-              </span>
+              <span className="font-semibold text-gray-700">Dwarka Expressway</span>
+              <span className="font-medium">Direct Access</span>
             </div>
 
             <div className="flex justify-between border-b pb-3">
-              <span className="font-semibold text-gray-700">Anchor Spaces</span>
-              <span className="font-medium">
-                Dedicated Anchor spaces
-              </span>
+              <span className="font-semibold text-gray-700">Gurgaon Railway Station</span>
+              <span className="font-medium">10 Minutes</span>
+            </div>
+
+            <div className="flex justify-between border-b pb-3">
+              <span className="font-semibold text-gray-700">NH-48 (Delhi–Jaipur Highway)</span>
+              <span className="font-medium">10 Minutes</span>
             </div>
 
             <div className="flex justify-between">
-              <span className="font-semibold text-gray-700">Maintenance</span>
-              <span className="font-medium">
-                Low maintenance module
-              </span>
+              <span className="font-semibold text-gray-700">Central Peripheral Road</span>
+              <span className="font-medium">12 Minutes</span>
             </div>
 
           </div>

@@ -2,46 +2,42 @@
 
 import { motion } from "framer-motion";
 import {
+  Plane,
   Building2,
-  ParkingCircle,
-  ShieldCheck,
-  Zap,
-  Landmark,
-  Theater,
+  Globe,
+  Route,
+  Train,
+  Map,
 } from "lucide-react";
 
 const features = [
   {
+    icon: Plane,
+    text: "Indira Gandhi International Airport – 15–20 Minutes",
+  },
+  {
     icon: Building2,
-    text: "One of the Biggest Commercial on Dwarka Expressway",
+    text: "India International Convention & Expo Centre (IICC) – 10 Minutes",
   },
   {
-    icon: Theater,
-    text: "Outdoor Patio, Water bodies & Amphitheater area",
+    icon: Globe,
+    text: "Diplomatic Enclave II – 12 Minutes",
   },
   {
-    icon: Zap,
-    text: "High Speed Escalators and Elevators",
+    icon: Route,
+    text: "Direct Access from Dwarka Expressway",
   },
   {
-    icon: ParkingCircle,
-    text: "Multi Level Car Parking & Ample Visitor Parking at Surface",
+    icon: Train,
+    text: "Gurgaon Railway Station – 10 Minutes",
   },
   {
-    icon: ShieldCheck,
-    text: "24*7 Security Surveillance",
+    icon: Map,
+    text: "NH-48 (Delhi–Jaipur Highway) – 10 Minutes",
   },
   {
-    icon: Zap,
-    text: "100% Power Backup",
-  },
-  {
-    icon: Landmark,
-    text: "Huge Atrium Area",
-  },
-  {
-    icon: ParkingCircle,
-    text: "Ample Surface and Basement Parking",
+    icon: Route,
+    text: "Central Peripheral Road – 12 Minutes",
   },
 ];
 
@@ -60,14 +56,14 @@ const WhyChoose = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-extrabold">
-            <span className="text-black">OCUS </span>
-            <span style={{ color: "#F77714" }}>MEDLEY</span>{" "}
-            <span className="text-slate-900">Features</span>
+            <span className="text-black">Exceptional </span>
+            <span style={{ color: "#F77714" }}>Connectivity</span>
           </h3>
 
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Explore the premium features and facilities offered at OCUS MEDLEY,
-            designed to create a vibrant commercial destination.
+            Positioned directly on Dwarka Expressway — a 29 km signal-free
+            corridor linking Delhi and Gurugram — ensuring excellent
+            accessibility and connectivity to major landmarks.
           </p>
         </div>
 
