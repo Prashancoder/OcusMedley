@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           <div className="max-w-2xl mx-auto text-gray-500 leading-relaxed">
-            This website is an independent property information platform and is not the official website of the developer. The content provided is for informational purposes only and does not constitute any legal offer or contract. All prices, specifications and availability are subject to change without prior notice. Images used on this website are for illustrative purposes only.
+          This website is an independent property information platform and is not the official website of the developer of OCUS Medley. The content provided is for informational purposes only and does not constitute any legal offer, agreement, or contract. All prices, availability, specifications, floor plans, and project details are subject to change without prior notice. Images, visuals, and representations used on this website are for illustrative purposes only. By submitting your details, you authorize us to contact you via call, SMS, WhatsApp, or email regarding this project, even if your number is registered under DND/NDNC. Your information may be shared with RERA-registered real estate professionals or developers for further assistance. For accurate and updated project information, please contact us directly.
           </div>
 
         </div>
