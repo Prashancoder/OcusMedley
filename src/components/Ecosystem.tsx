@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import video from "@/assets/video.mp4";
+import bgImage from "@/assets/patners/bg.png";
 
 const retailFeatures = [
   "Ground & First Floor High-Street Retail",
@@ -30,7 +31,16 @@ const institutions = [
 
 const Ecosystem = () => {
   return (
-    <section id="ecosystem" className="py-24 bg-white">
+    <section
+      id="ecosystem"
+      className="py-24 relative"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="container mx-auto px-6">
 
         {/* Heading */}
@@ -56,13 +66,14 @@ const Ecosystem = () => {
             transition={{ duration: 0.6 }}
             className="rounded-2xl overflow-hidden shadow-xl"
           >
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-[650px] object-cover"            />
+<video
+  src={video}
+  controls
+  preload="metadata"
+  className="w-full h-[650px] object-cover rounded-2xl"
+/>
+
+
           </motion.div>
 
           {/* Cards */}
@@ -71,7 +82,7 @@ const Ecosystem = () => {
             {/* Retail */}
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
+              className="bg-white/80 backdrop-blur rounded-2xl p-8 shadow-lg border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <Theater className="text-[#F77714]" size={30} />
@@ -93,7 +104,7 @@ const Ecosystem = () => {
             {/* Institutions */}
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
+              className="bg-white/80 backdrop-blur rounded-2xl p-8 shadow-lg border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <Hospital className="text-[#F77714]" size={30} />
