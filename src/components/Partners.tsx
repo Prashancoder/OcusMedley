@@ -1,34 +1,38 @@
 import React from "react";
 
 import img1 from "@/assets/patners/1.jpg";
-import img2 from "@/assets/patners/2.jpg";
 import img3 from "@/assets/patners/3.jpg";
 import img4 from "@/assets/patners/4.jpg";
 import img5 from "@/assets/patners/6.jpg";
 
 const Partners: React.FC = () => {
-  const partners: string[] = [img1, img2, img3, img4, img5];
+  const partners: string[] = [img1, img3, img4, img5];
 
   return (
-    <section className="py-28 bg-white overflow-hidden">
+    <section className="py-28 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 text-center">
 
-      <h2 className="text-4xl md:text-5xl font-bold mb-20">
-  <span style={{ color: "#DB8C23" }}>GALL</span>
-  <span className="text-black">ERY</span>
-</h2>
+        {/* Heng */}
+        <h2 className="text-4xl md:text-5xl font-bold mb-20 tracking-wide">
+          <span style={{ color: "#DB8C23" }}>GALL</span>
+          <span className="text-black">ERY</span>
+        </h2>
 
+        {/* Slider */}
         <div className="slider">
           <div className="slide-track">
             {[...partners, ...partners].map((logo, index) => (
               <div className="slide" key={index}>
-                <img src={logo} alt="brand" />
+                <div className="card">
+                  <img src={logo} alt="gallery" />
+                </div>
               </div>
             ))}
           </div>
         </div>
 
         <style>{`
+
           .slider {
             overflow: hidden;
             position: relative;
@@ -38,27 +42,39 @@ const Partners: React.FC = () => {
           .slide-track {
             display: flex;
             align-items: center;
-            width: calc(550px * 12);
-            animation: scroll 30s linear infinite;
+            width: calc(420px * 12);
+            animation: scroll 35s linear infinite;
           }
 
           .slide {
-            width: 550px;
+            width: 420px;
+            padding: 20px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            padding: 40px;
           }
 
-          .slide img {
-            height: 300px;
-            width: auto;
-            object-fit: contain;
-            transition: transform 0.3s ease;
+          .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
           }
 
-          .slide img:hover {
-            transform: scale(1.08);
+          .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+          }
+
+          .card img {
+            width: 380px;
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+          }
+
+          .card img:hover {
+            transform: scale(1.05);
           }
 
           @keyframes scroll {
@@ -69,6 +85,7 @@ const Partners: React.FC = () => {
               transform: translateX(-50%);
             }
           }
+
         `}</style>
 
       </div>

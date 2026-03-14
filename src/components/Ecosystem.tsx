@@ -8,6 +8,8 @@ import {
   Hospital,
 } from "lucide-react";
 
+import video from "@/assets/video.mp4";
+
 const retailFeatures = [
   "Ground & First Floor High-Street Retail",
   "Anchor Stores & Multiplex",
@@ -44,52 +46,73 @@ const Ecosystem = () => {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {/* Main Layout */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
-          {/* Retail & Entertainment */}
+          {/* Video Section */}
           <motion.div
-            whileHover={{ y: -8 }}
-            className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="rounded-2xl overflow-hidden shadow-xl"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <Theater className="text-[#F77714]" size={30} />
-              <h3 className="text-xl font-bold">
-                Retail & Entertainment Hub
-              </h3>
-            </div>
-
-            <ul className="space-y-3 text-gray-700">
-              {retailFeatures.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <Utensils size={18} className="text-[#F77714] mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-[650px] object-cover"            />
           </motion.div>
 
-          {/* Institutions */}
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Hospital className="text-[#F77714]" size={30} />
-              <h3 className="text-xl font-bold">
-                Nearby Institutions
-              </h3>
-            </div>
+          {/* Cards */}
+          <div className="space-y-8">
 
-            <ul className="space-y-3 text-gray-700">
-              {institutions.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <School size={18} className="text-[#F77714] mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Retail */}
+            <motion.div
+              whileHover={{ y: -8 }}
+              className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <Theater className="text-[#F77714]" size={30} />
+                <h3 className="text-xl font-bold">
+                  Retail & Entertainment Hub
+                </h3>
+              </div>
+
+              <ul className="space-y-3 text-gray-700">
+                {retailFeatures.map((item, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <Utensils size={18} className="text-[#F77714] mt-1" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Institutions */}
+            <motion.div
+              whileHover={{ y: -8 }}
+              className="bg-gray-50 rounded-2xl p-8 shadow-lg border"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <Hospital className="text-[#F77714]" size={30} />
+                <h3 className="text-xl font-bold">
+                  Nearby Institutions
+                </h3>
+              </div>
+
+              <ul className="space-y-3 text-gray-700">
+                {institutions.map((item, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <School size={18} className="text-[#F77714] mt-1" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+          </div>
 
         </div>
       </div>
