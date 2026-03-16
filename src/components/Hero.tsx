@@ -144,7 +144,7 @@ const Hero = () => {
         </div>
 
 {/* MOBILE BOTTOM TEXT */}
-<div className="absolute bottom-24 left-0 w-full px-6 text-center md:hidden z-20">
+<div className="absolute bottom-0 left-0 w-full px-6 text-center md:hidden z-20">
   <div className="bg-black/60 backdrop-blur-sm text-white py-4 px-4 rounded-lg text-sm font-semibold leading-relaxed">
 
     <div className="text-[#FB923C] font-semibold mb-2">
