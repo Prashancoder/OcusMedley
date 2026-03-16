@@ -54,7 +54,7 @@ const Hero = () => {
 
 
 {/* MOBILE TOP TEXT */}
-<div className="absolute top-20 left-0 w-full px-6 text-center md:hidden z-20">
+<div className="absolute top-5 left-0 w-full px-6 text-center md:hidden z-20">
   <div className="bg-black/60 backdrop-blur-sm text-white py-4 px-4 rounded-lg text-sm font-semibold leading-relaxed">
 
 
