@@ -5,13 +5,13 @@ import img3 from "@/assets/patners/3.jpg";
 import img4 from "@/assets/patners/4.jpg";
 import img5 from "@/assets/patners/6.jpg";
 
-import img6 from "@/assets/patners/a1.jpg";
-import img7 from "@/assets/patners/a2.jpg";
+// import img6 from "@/assets/patners/a1.jpg";
+// import img7 from "@/assets/patners/a2.jpg";
 // import img8 from "@/assets/patners/a3.jpg";
-import img9 from "@/assets/patners/a4.jpg";
+// import img9 from "@/assets/patners/a4.jpg";
 
 const Partners: React.FC = () => {
-  const partners: string[] = [img1, img4, img5, img6, img3, img7, img9];
+  const partners: string[] = [img1, img4, img5, img3];
 
   return (
     <section
