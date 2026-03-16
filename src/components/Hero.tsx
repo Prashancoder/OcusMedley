@@ -88,12 +88,15 @@ const Hero = () => {
 
             {/* RIGHT SIDE FORM */}
             <div className="hidden md:flex justify-end items-start">
-              <div className="w-full max-w-xs bg-white/90 p-3 rounded-lg shadow-lg">
+              <div className="w-full max-w-xs bg-white/90 p-4 rounded-lg shadow-lg">
 
                 <LeadForm variant="compact" />
 
               </div>
             </div>
+
+
+            
 
           </div>
         </div>
