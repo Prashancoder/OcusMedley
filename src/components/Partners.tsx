@@ -4,13 +4,17 @@ import img1 from "@/assets/patners/1.jpg";
 import img3 from "@/assets/patners/3.jpg";
 import img4 from "@/assets/patners/4.jpg";
 
-// import img6 from "@/assets/patners/a1.jpg";
-// import img7 from "@/assets/patners/a2.jpg";
-// import img8 from "@/assets/patners/a3.jpg";
-// import img9 from "@/assets/patners/a4.jpg";
+import img6 from "@/assets/patners/aa.jpeg";
+import img7 from "@/assets/patners/bb.jpeg";
+import img8 from "@/assets/patners/cc.png";
+import img9 from "@/assets/patners/dd.png";
+import img10 from "@/assets/patners/ee.png";
+import img11 from "@/assets/patners/ff.png";
+import img12 from "@/assets/patners/gg.png";
+
 
 const Partners: React.FC = () => {
-  const partners: string[] = [img1, img4, img3];
+  const partners: string[] = [img1, img4, img3 , img6 , img7 , img8 , img9 , img10 , img11 , img12 ];
 
   return (
     <section
