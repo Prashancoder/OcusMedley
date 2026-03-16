@@ -23,22 +23,7 @@ const Projects = () => {
       {/* 3 Column Layout */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
-        {/* 1️⃣ VIDEO REEL */}
-        <div className="bg-white shadow-2xl rounded-3xl overflow-hidden">
-
-          <video
-            src={videoSource}
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full h-full object-cover"
-          />
-
-        </div>
-
-
-        {/* 2️⃣ Prime Location */}
+        {/* 1️⃣ Prime Location */}
         <div className="bg-white shadow-2xl rounded-3xl p-8">
 
           <h3 className="text-xl font-bold mb-4">
@@ -79,7 +64,7 @@ const Projects = () => {
         </div>
 
 
-        {/* 3️⃣ Connectivity */}
+        {/* 2️⃣ Connectivity */}
         <div className="bg-white shadow-2xl rounded-3xl p-8">
 
           <h3 className="text-xl font-bold mb-4">
@@ -114,6 +99,21 @@ const Projects = () => {
             </div>
 
           </div>
+
+        </div>
+
+
+        {/* 3️⃣ VIDEO REEL */}
+        <div className="bg-white shadow-2xl rounded-3xl overflow-hidden">
+
+          <video
+            src={videoSource}
+            controls
+            autoPlay
+            muted
+            loop
+            className="w-full h-full object-cover"
+          />
 
         </div>
 
