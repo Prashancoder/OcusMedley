@@ -24,9 +24,13 @@ const Footer = () => {
 
      
 
-            <div className="text-gray-500 text-xs">
-              RERA No: ________
-            </div>
+              {/* <div className="text-gray-500 text-xs">
+                RERA No: Temporay Number - 6002 <br /> RERA APPLIED
+              </div> */}
+              <div className="text-gray-500 text-xs leading-relaxed">
+  <span className="font-medium">RERA No:</span> Temporary No - 6002 <br />
+  <span className="uppercase tracking-wide">RERA Applied</span>
+</div>
 
           </div>
 
