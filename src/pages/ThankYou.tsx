@@ -11,8 +11,8 @@ const ThankYou = () => {
   const [leadSubmitted, setLeadSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
 
+  // 🔥 Lead Submit Logic
   useEffect(() => {
-    // Get form data from sessionStorage (stored before navigation)
     const formData = sessionStorage.getItem('pendingLead');
     const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -37,7 +37,6 @@ const ThankYou = () => {
           
           if (data?.success) {
             setLeadSubmitted(true);
-            // Clear the stored data
             sessionStorage.removeItem('pendingLead');
           } else {
             throw new Error("Lead submission failed");
@@ -56,10 +55,18 @@ const ThankYou = () => {
 
       submitLeadInBackground();
     } else {
-      // If no form data, mark as submitted (user might have refreshed)
       setLeadSubmitted(true);
     }
   }, [toast]);
+
+  // 🔥 Google Ads Conversion Tracking (IMPORTANT)
+  useEffect(() => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        send_to: 'AW-17980333970/ez3RC07sxokcEJK_2P1C'
+      });
+    }
+  }, []);
 
   const handleGoHome = () => {
     navigate("/");
